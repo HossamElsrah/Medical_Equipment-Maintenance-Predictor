@@ -1,0 +1,2 @@
+equipment_id,failure_probability,days_to_failure,spare_parts_needed,priority,quantity_required
+EQ-01,0.271,29,No,Low,0

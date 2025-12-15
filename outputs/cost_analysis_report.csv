@@ -1,0 +1,2 @@
+num_equipment,predicted_failures,corrective_maintenance_cost,preventive_maintenance_cost,total_savings,savings_percentage,roi
+1,0,0.0,0.0,0.0,0,0
