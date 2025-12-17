@@ -1,2 +1,2 @@
 equipment_id,predicted_failure_prob,days_to_failure,last_maintenance,suggested_maintenance_date,status
-EQ-01,0.271,29,2025-12-15,2026-01-06,No Failure
+EQ-01,0.006,35,2025-12-17,2026-01-14,No Failure

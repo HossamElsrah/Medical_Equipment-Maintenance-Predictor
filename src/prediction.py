@@ -43,6 +43,11 @@ def predict_equipment_failure(equipment_data):
     equipment_id = input_df['equipment_id'][0]
     input_features = input_df.drop(columns=['equipment_id'])
     
+    # Feature Engineering - Add interaction features
+    input_features['Temp_Diff'] = input_features['Process temperature [K]'] - input_features['Air temperature [K]']
+    input_features['Power'] = input_features['Torque [Nm]'] * input_features['Rotational speed [rpm]'] / 9550  # Power in kW
+    input_features['Torque_Tool_Interaction'] = input_features['Torque [Nm]'] * input_features['Tool wear [min]']
+    
     # Scaling
     input_scaled = scaler.transform(input_features)
     
